@@ -15,7 +15,7 @@ if (ASU_TSChannelName != "") then {
 
 //Set TS3 channel password for auto move - added by Bob Murphy 31.03.2020
 if (ASU_TSChannelName !="") then {
-	[missionNamespace, ["tf_radio_channel_password", ASU_TSChannelPassword]] remoteExecCall ["setVariable" _owner];
+	[missionNamespace, ["tf_radio_channel_password", ASU_TSChannelPassword]] remoteExecCall ["setVariable", _owner];
 };
 
 //diag_log "Player connected!";
