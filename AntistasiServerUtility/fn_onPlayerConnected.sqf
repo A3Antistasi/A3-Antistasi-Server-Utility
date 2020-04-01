@@ -13,6 +13,11 @@ if (ASU_TSChannelName != "") then {
 	[missionNamespace, ["tf_radio_channel_name", ASU_TSChannelName]] remoteExecCall ["setVariable", _owner];
 };
 
+//Set TS3 channel password for auto move - added by Bob Murphy 31.03.2020
+if (ASU_TSChannelName !="") then {
+	[missionNamespace, ["tf_radio_channel_password", ASU_TSChannelPassword]] remoteExecCall ["setVariable", _owner];
+};
+
 //diag_log "Player connected!";
 
 if (ASU_serverMode == "HARDCORE") then {
