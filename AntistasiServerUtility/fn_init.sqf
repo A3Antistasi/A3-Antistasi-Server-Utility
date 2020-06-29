@@ -29,8 +29,8 @@ switch (serverName) do { // Tell me your name!
 };
 
 if (ASU_TSChannelName != "") then {
-	tf_radio_channel_name = ASU_TSChannelName;
-	tf_radio_channel_password = ASU_TSChannelPassword; // added by Bob Murphy 31.03.2020
+	TFAR_Teamspeak_Channel_Name = ASU_TSChannelName;
+	TFAR_Teamspeak_Channel_Password = ASU_TSChannelPassword; // added by Bob Murphy 31.03.2020
 };
 
 addMissionEventHandler ["PlayerConnected", ASU_fnc_onPlayerConnected];
